@@ -6,7 +6,7 @@
     "start": "nodemon src/index.js localhost 3000",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "lint-staged"
+    "prettier": "prettier --single-quote --trailing-comma es5 --write 'src/**/*.{js,json,scss}'"
   },
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma es5 --write 'src/**/*.{js,json,scss}'"
